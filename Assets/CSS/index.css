@@ -11,7 +11,7 @@ main {
 }
 .overlay {
     width: 100%;
-    background: linear-gradient(180deg rgb(240,248,255), rgb(255,255,255)) ;
+    background: linear-gradient(180deg, rgb(240,248,255), rgb(255,255,255)) ;
 }
 
 header {
@@ -160,7 +160,7 @@ span {
 
 .one {
     padding: 48px 0;
-    background:linear-gradient(180deg rgb(254,252,249), rgb(255, 255, 255)) ;
+    background:linear-gradient(180deg, rgb(254,252,249), rgb(255, 255, 255)) ;
     margin-top: -15px;
     width: 100%;
 }
