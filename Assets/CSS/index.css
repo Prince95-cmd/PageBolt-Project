@@ -67,6 +67,7 @@ nav #logo {
     justify-items: center;
     background-color: rgb(223,241,255);
     border-radius: 25px;
+    animation: fadein 2s;
 }
 .fa.fa-arrow-right {
     margin-top: 7px;
@@ -110,6 +111,7 @@ span {
     text-align: center;
     font-size: 40px;
     color:rgb(16,42,67) ;
+    animation: fadein 4.5s;
 }
 
 #f-p {
@@ -143,6 +145,13 @@ span {
     border-radius: 8px;
 
 }
+
+.store img:hover {
+    width:129px ;
+    height: 42px;
+    transition: linear 0.10s;
+    cursor: pointer;
+} 
 
 .imp {
     width: 493px;
@@ -218,6 +227,9 @@ span {
     z-index: 2 ;
     left: 20px;
     top: -14px;
+    animation-name: slidein;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
 }
 
 .imgs #chat img {
@@ -344,6 +356,9 @@ span {
     top: 90px;
     border-radius: 15px;
     box-shadow: 5px 5px 50px -10px grey;
+    animation-name: slidein;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
 }
 
 .fore #tall {
@@ -757,6 +772,13 @@ span {
     border-radius: 8px;
 }
 
+.sele img {
+    width:129px ;
+    height: 42px;
+    transition: linear 0.10s;
+    cursor: pointer;
+}
+
 #boss {
     width: 493px;
     height: 406.18px;
@@ -859,6 +881,21 @@ footer a {
 footer a:hover {
     color: rgb(33, 120, 167);
 }
+
+@keyframes fadein {
+    0% { opacity: 0; bottom: 5px ; }
+    100% { opacity: 1; }
+  }
+
+@keyframes slidein {
+    0% {left: -40px;}
+    100%{left: 0px;}
+
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+
+
 
 @media only screen and (min-width: 1025px ) {
     :root {
@@ -976,6 +1013,7 @@ footer a:hover {
         justify-items: center;
         background-color: rgb(223,241,255);
         border-radius: 25px;
+        animation: fadein 2s;
     }
     .fa.fa-arrow-right {
         margin-top: 10.10px;
@@ -988,11 +1026,12 @@ footer a:hover {
         margin-top: 8px;
         margin-left:15px ;
         color: rgb(65,190,255) ;
+        font-weight: 400;
     }
     .roam h5 {
         font-size: 14px;
-        font-weight: bolder;
-        margin-top: 4px;
+        font-weight: 500;
+        margin-top: 2.5px;
         margin-left:14px ;
         width: 29.66px;
         height: 19.33px;
@@ -1035,6 +1074,7 @@ footer a:hover {
         font-size: 72px;
         line-height: 80px;
         color:rgb(16,42,67) ;
+        animation: fadein 4.5s;
     }
     
     #f-p {
@@ -1044,6 +1084,7 @@ footer a:hover {
         padding: 20px 0 10px;
         margin: 10px auto;
         color: rgb(82,110,136);
+        animation: fadein 6.5s;
     }
     
     #f-p p {
@@ -1062,13 +1103,20 @@ footer a:hover {
         width: 330px;
         margin: 0 auto;
         justify-content: space-between;
+        animation: fadein 8.5s;
     }
     .store img {
         width: 156px;
         height: 48px;
         border-radius: 8px;
-    
     }
+
+     .store img:hover {
+        width:160px ;
+        height: 52px;
+        transition: linear 0.10s;
+        cursor: pointer;
+    } 
     
     .imp {
         width: 760px;
@@ -1149,7 +1197,12 @@ footer a:hover {
         left: 70px;
         top: -60px;
         margin-left: -20px;
+        animation-name: slidein;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-out;
     }
+
+    
     
     .imgs #chat img {
         width: 100%;
@@ -1262,8 +1315,14 @@ footer a:hover {
         border-radius: 50px;
         margin-left: 120px;
         margin-top: 40px;
+        position: relative;
         background-color:rgb(255,199,0) ;
         border: none;
+        animation-name: float;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
         
     }
     
@@ -1285,6 +1344,9 @@ footer a:hover {
         top: 90px;
         border-radius: 15px;
         box-shadow: 5px 5px 50px -10px grey;
+        animation-name: slidein;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-out;
     }
     
     .fore #tall {
@@ -1428,6 +1490,9 @@ footer a:hover {
         background-color:rgb(255,255,255) ;
         margin-left: 110px;
         box-shadow: 5px 5px 20px -10px grey;
+        animation-name: motion;
+        animation-duration: 2s;
+        animation-timing-function: linear;
     }
     
     #oda p {
@@ -1463,6 +1528,9 @@ footer a:hover {
         background-color: rgb(255,255,255);
         margin-right:110px ;
         box-shadow: 5px 5px 20px -10px grey;
+        animation-name: motion;
+        animation-duration: 2s;
+        animation-timing-function: linear;
     }
 
     .ada p {
@@ -1509,6 +1577,9 @@ footer a:hover {
         background-color: white;
         box-shadow: 5px 5px 40px -10px grey;
     }
+
+  
+
     
     #gada #gn-2 {
         width: 280.59px;
@@ -1520,6 +1591,11 @@ footer a:hover {
         border-radius: 15px;
         background-color: white;
         box-shadow: 5px 5px 40px -10px grey;
+    }
+
+    #gada #gn-1:hover , #gada #gn-2:hover ,#gada #gn-3:hover {
+        margin-top:85px ;
+        transition: all 0.9s ease ;
     }
     #gada #gn-3 {
         width: 280.59px;
@@ -1533,6 +1609,8 @@ footer a:hover {
         box-shadow: 5px 5px 40px -10px grey;
     
     }
+
+  
     
     .five #gn-1 h4, .five #gn-2 h4, .five #gn-3 h4 {
         width: 204.41px;
@@ -1743,6 +1821,13 @@ footer a:hover {
         width: 156px;
         height: 48px;
         border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .sale img:hover {
+        width:160px ;
+        height: 52px;
+        transition: linear 0.10s;
     }
     
     #boss {
@@ -1859,5 +1944,30 @@ footer a:hover {
     footer a:hover {
         color: rgb(33, 120, 167);
     }
+
+    @keyframes fadein {
+        0% { opacity: 0;}
+        100% { opacity: 1; }
+      }
     
+      @keyframes slidein {
+        0% {left: -60px;}
+        100%{left: 0px;}
+
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+      }
+
+      @keyframes float {
+        0%{top: -10px;}
+       100%{top: 0px;}
+      }
+
+      @keyframes motion {
+        0% { opacity: 0;}
+        100% { opacity: 1; }
+
+        0%{bottom: 30px;}
+        100%{bottom: 0px;}
+      }
 }
