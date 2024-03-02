@@ -332,10 +332,16 @@ span {
     height: 40.4px;
     border-radius: 50px;
     border: none;
+    position: relative;
     margin-left: 50px;
     margin-top: 20px;
     background-color:rgb(255,199,0) ;
     border: none;
+    animation-name: float;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
     
 }
 
@@ -486,6 +492,10 @@ span {
     background-color:rgb(255,255,255) ;
     border-radius: 15px;
     box-shadow: 5px 5px 20px -10px grey;
+    position: relative;
+    animation-name: motion;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
 
 #oda p {
@@ -520,6 +530,10 @@ span {
     background-color:rgb(255,255,255) ;
     border-radius: 15px;
     box-shadow: 5px 5px 20px -10px grey;
+    position: relative;
+    animation-name: motion;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
 .ada img {
     width: 445px;
@@ -561,6 +575,10 @@ span {
     border-right: none;
     border-bottom: none;
     box-shadow: 5px 5px 20px -10px grey;
+    position: relative;
+    animation-name: motion;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
 
 .five #gn-2 {
@@ -575,6 +593,10 @@ span {
     border-right: none;
     border-bottom: none;
     box-shadow: 5px 5px 20px -10px grey;
+    position: relative;
+    animation-name: motion;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
 .five #gn-3 {
     width: 450px;
@@ -588,6 +610,15 @@ span {
     border-right: none;
     border-bottom: none;
     box-shadow: 5px 5px 20px -10px grey;
+    position: relative;
+    animation-name: motion;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+#gada #gn-1:hover , #gada #gn-2:hover ,#gada #gn-3:hover {
+    margin-top:-5px ;
+    transition: all 0.9s ease ;
 }
 
 .five #gn-1 h4, .five #gn-2 h4, .five #gn-3 h4 {
@@ -779,6 +810,13 @@ span {
     cursor: pointer;
 }
 
+.sale img:hover {
+    width:129px ;
+    height: 42px;
+    transition: linear 0.10s;
+    cursor: pointer;
+}
+
 #boss {
     width: 493px;
     height: 406.18px;
@@ -893,6 +931,19 @@ footer a:hover {
 
     0%{opacity: 0;}
     100%{opacity: 1;}
+  }
+
+  @keyframes float {
+    0%{top: -10px;}
+   100%{top: 0px;}
+  }
+
+  @keyframes motion {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+
+    0%{top: 30px;}
+    100%{top: 0px;}
   }
 
 
@@ -1319,7 +1370,7 @@ footer a:hover {
         background-color:rgb(255,199,0) ;
         border: none;
         animation-name: float;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-timing-function: linear;
@@ -1490,8 +1541,9 @@ footer a:hover {
         background-color:rgb(255,255,255) ;
         margin-left: 110px;
         box-shadow: 5px 5px 20px -10px grey;
+        position: relative;
         animation-name: motion;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-timing-function: linear;
     }
     
@@ -1528,8 +1580,9 @@ footer a:hover {
         background-color: rgb(255,255,255);
         margin-right:110px ;
         box-shadow: 5px 5px 20px -10px grey;
+        position: relative;
         animation-name: motion;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-timing-function: linear;
     }
 
@@ -1576,6 +1629,10 @@ footer a:hover {
         border-radius: 15px;
         background-color: white;
         box-shadow: 5px 5px 40px -10px grey;
+        position: relative;
+        animation-name: motion;
+        animation-duration: 1s;
+        animation-timing-function: linear;
     }
 
   
@@ -1591,6 +1648,10 @@ footer a:hover {
         border-radius: 15px;
         background-color: white;
         box-shadow: 5px 5px 40px -10px grey;
+        position: relative;
+        animation-name: motion;
+        animation-duration: 1s;
+        animation-timing-function: linear;
     }
 
     #gada #gn-1:hover , #gada #gn-2:hover ,#gada #gn-3:hover {
@@ -1607,6 +1668,10 @@ footer a:hover {
         border-radius: 15px;
         background-color: white;
         box-shadow: 5px 5px 40px -10px grey;
+        position: relative;
+        animation-name: motion;
+        animation-duration: 1s;
+        animation-timing-function: linear;
     
     }
 
@@ -1967,7 +2032,7 @@ footer a:hover {
         0% { opacity: 0;}
         100% { opacity: 1; }
 
-        0%{bottom: 30px;}
-        100%{bottom: 0px;}
+        0%{top: 30px;}
+        100%{top: 0px;}
       }
 }
